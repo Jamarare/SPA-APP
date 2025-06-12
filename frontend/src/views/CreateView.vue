@@ -52,6 +52,7 @@
             email: addEmail.value,
             eventId: parseInt(addEventId.value)
         }
+        console.log(localStorage.getItem('jwt'))
         eventsStore.addPerson(people)
     }
     function showUpdate(id: number) {
